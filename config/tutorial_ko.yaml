@@ -60,5 +60,5 @@ node_lines:
       modules:
         - module_type: openai_llm
           llm: gpt-3.5-turbo
-          temperature: [ 0.1, 1.0 ]
+          temperature: [ 0.1 ]
           batch: 8

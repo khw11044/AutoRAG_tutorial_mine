@@ -26,7 +26,7 @@ pip install llama_index.llms.ollama
 
 아래 명령어로 로컬에서 모델을 돌린다.
 ```bash
-python main.py --config ./config/compact_local_simple_ollama_ko.yaml
+python main.py --config ./config/tutorial_ko.yaml
 
 ```
 
@@ -34,6 +34,14 @@ python main.py --config ./config/compact_local_simple_ollama_ko.yaml
 
 ```bash
 autorag dashboard --trial_dir ./benchmark/0
+```
+
+아래 명령어로 streamlit을 작동하고 챗을 해본다. 
+
+(맥이나 리눅스만 됨)
+
+```bash
+autorag run_web --trial_path ./benchmark/0
 ```
 
 ------

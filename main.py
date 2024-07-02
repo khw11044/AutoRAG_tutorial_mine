@@ -38,10 +38,15 @@ if __name__ == '__main__':
 # 저는 가장 위에거 했어요. 
 # python main.py --config ./config/compact_local_simple_ollama_ko.yaml
 
+# openai 모델 사용은 아래 명령어로 해도 오류 없이 작동하게 만들었어요.
+# python main.py --config ./config/tutorial_ko.yaml
+
 # python main.py --config ./config/config_korean_openai_huggigface.yaml
 # python main.py --config ./config/compact_local_huggingface.yaml
 # python main.py --config ./config/compact_local_simple_ollama.yaml
 
+# 평가지표 대시보드로 시각화된 자료 보기 
 # autorag dashboard --trial_dir ./benchmark/0
 
+# 윈도우에서는 아래 코드가 무조건 오류뜸, 맥이나 리눅스는 오류 안뜸 
 # autorag run_web --trial_path ./benchmark/0
