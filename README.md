@@ -4,6 +4,36 @@ https://github.com/Marker-Inc-Korea/AutoRAG-tutorial-ko
 
 위 코드를 기반으로 따라함
 
+
+### 구성 
+
+- config 폴더: AutoRAG를 돌리기 위한 retrieval 종류, 평가지표, 프롬프트 평가지표, llm모델 종류, 생성 평가지표등 설정하는 yaml 파일들이 있음 
+
+- data 폴더: 기존 .parguet 파일들이 있음 
+
+- new_data 폴더: 우리의 pkl파일이 있고 이것으로 만든 parquet 파일이 있음 
+
+- original_code 폴더: 원래 root 위치에 있던 코드들 
+
+- 00.make_corpus.py: raw_docs 폴더의 파일들을 corpus파일로 생성  
+
+- 01.pkl_to_parquet.ipynb: pkl파일에서 데이터를 읽어와 parquet 파일 생성  
+
+- 02.make_qa.py: my_data/corpus_new.parquet파일의 데이터를 통해 질의응답 만듬 
+
+- 03.main.py: 설정한 config yaml파일과, qa parquet데이터를 통해 AutoRAG 실행 
+
+- read_data.ipynb: 생성된 파일들 확인하기 용 
+
+나는 먼저 데이터팀한테 받은 pkl파일을 my_data 폴더에 넣고 
+
+01.pkl_to_parquet.ipynb을 통해 my_data/corpus_new.parquet 파일을 만듬 
+
+02.make_qa.py를 통해 my_data.qa_new.parquet 파일을 만듬 
+
+
+
+
 # 설치
 
 ```bash

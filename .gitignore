@@ -3,11 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+database
+
 data/corpus_new.parquet
 data/qa_new.parquet
 
 my_data/corpus_new.parquet
 my_data/qa_new.parquet
+my_data/title.parquet
+my_data/post.parquet
+my_data/qa_new.xlsx
 
 # C extensions
 *.so
